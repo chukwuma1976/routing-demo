@@ -1,0 +1,12 @@
+h1 {
+    text-align: center;
+    color: blue;
+    margin-right: 200px;
+}
+
+.header {
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    background-color: yellow;
+}

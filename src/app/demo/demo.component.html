@@ -1,0 +1,15 @@
+<main>
+    <h2>Welcome to Demo Component</h2>
+    <p>Please note that I am located in the router outlet below the header</p>
+    <div class="button-group-dynamic">
+        <button mat-raised-button *ngFor="let id of ids" [routerLink]="['/resource', id]">
+            Resource {{id}}
+        </button>
+    </div>
+    <h3>Child route buttons are located above child router outlet</h3>
+    <div>
+        <button mat-raised-button routerLink="/demo/first-child">Child 1</button>
+        <button mat-raised-button routerLink="/demo/second-child">Child 2</button>
+    </div>
+    <router-outlet />
+</main>
